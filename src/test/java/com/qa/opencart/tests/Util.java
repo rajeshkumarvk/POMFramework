@@ -6,4 +6,7 @@ public class Util {
 		System.out.println("login feature");
 	}
 
+		public void register() {
+		System.out.println("register feature");
+}
 }
