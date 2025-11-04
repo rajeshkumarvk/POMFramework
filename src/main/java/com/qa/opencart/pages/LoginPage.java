@@ -17,7 +17,7 @@ public class LoginPage {
 	//1. private locators(By locators) of the page
 	private final By email = By.id("input-email");
 	private final By password = By.id("input-password");
-	private final By forgotpasswordlink = By.linkText("Forgotten Password11");
+	private final By forgotpasswordlink = By.linkText("Forgotten Password");
 	private final By loginBtn = By.xpath("//input[@value='Login']");
 	private final By registerLink = By.linkText("Register");
 	
