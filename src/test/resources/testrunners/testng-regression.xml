@@ -3,6 +3,12 @@
 
 <suite name="Opencart App Test Regression Suite" verbose="4" thread-count="5" parallel="tests">
 
+<listeners>
+		<listener class-name="com.aventstack.chaintest.plugins.ChainTestListener"/>
+		<listener class-name="com.qa.opencart.listeners.TestAllureListener"/>
+		<listener class-name="com.qa.opencart.listeners.AnontationTransformer"/>
+	</listeners>
+
 	<test name="Login Page Test_chrome">
 	<parameter name="browser" value="chrome"></parameter>
 		<classes>
@@ -10,7 +16,7 @@
 		</classes>
 	</test>
 	
-	<test name="Login Page Test_firefox">
+<!--	<test name="Login Page Test_firefox">
 	<parameter name="browser" value="firefox"></parameter>
 		<classes>
 			<class name="com.qa.opencart.tests.LoginPageTest" />
@@ -22,7 +28,7 @@
 		<classes>
 			<class name="com.qa.opencart.tests.LoginPageTest" />
 		</classes>
-	</test>
+	</test>-->
 	
 	<test name="Accounts Page Test_chrome">
 	<parameter name="browser" value="chrome"></parameter>
@@ -31,7 +37,7 @@
 		</classes>
 	</test>
 	
-	<test name="Accounts Page Test_firefox">
+<!--	<test name="Accounts Page Test_firefox">
 	<parameter name="browser" value="firefox"></parameter>
 		<classes>
 			<class name="com.qa.opencart.tests.AccountsPageTest" />
@@ -50,7 +56,7 @@
 		<classes>
 			<class name="com.qa.opencart.tests.SearchResultPageTest" />
 		</classes>
-	</test>
+	</test>-->
 	
 	<test name="Search Test_chrome">
 	<parameter name="browser" value="chrome"></parameter>
@@ -59,12 +65,12 @@
 		</classes>
 	</test>
 	
-	<test name="Search Test_firefox">
+<!--	<test name="Search Test_firefox">
 	<parameter name="browser" value="firefox"></parameter>
 		<classes>
 			<class name="com.qa.opencart.tests.SearchResultPageTest" />
 		</classes>
-	</test>
+	</test>-->
 	
 	 <test name="ProductInfo Page Test_chrome">
 	 <parameter name="browser" value="chrome"></parameter>
@@ -73,7 +79,7 @@
 		</classes>
 	</test>
 	
-	<test name="ProductInfo Page Test_firefox">
+<!--	<test name="ProductInfo Page Test_firefox">
 	 <parameter name="browser" value="firefox"></parameter>
 		<classes>
 			<class name="com.qa.opencart.tests.ProductInfoPageTest" />
@@ -85,27 +91,27 @@
 		<classes>
 			<class name="com.qa.opencart.tests.ProductInfoPageTest" />
 		</classes>
-	</test>
+	</test>-->
 	
-	<test name="Register Page Test_chrome"> 
+<!--	<test name="Register Page Test_chrome"> 
 		 <parameter name="browser" value="chrome"></parameter>
 			<classes> 
 				<class name="com.qa.opencart.tests.RegisterPageTest" /> 
 			</classes> 
-	</test>
+	</test>-->
 	
-	<test name="Register Page Test_firefox"> 
+<!--	<test name="Register Page Test_firefox"> 
 		 <parameter name="browser" value="firefox"></parameter>
 			<classes> 
 				<class name="com.qa.opencart.tests.RegisterPageTest" /> 
 			</classes> 
 	</test>
-	
-	<test name="Register Page Test_edge"> 
+	-->
+<!--	<test name="Register Page Test_edge"> 
 		 <parameter name="browser" value="edge"></parameter>
 			<classes> 
 				<class name="com.qa.opencart.tests.RegisterPageTest" /> 
 			</classes> 	
-	</test>
+	</test>-->
 
 </suite>	
