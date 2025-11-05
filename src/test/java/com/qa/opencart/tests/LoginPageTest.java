@@ -60,11 +60,11 @@ public class LoginPageTest extends BaseTest{
 	
 	}
 	
-	@Test(enabled = false)
-	public void forgotPassword()  {
-	accPage=loginPage.Login(prop.getProperty("username"), prop.getProperty("pwd"));
-	Assert.assertEquals(accPage.getAccountPageTitle(), ACCOUNT_PAGE_TITLE);
+//	@Test(enabled = false)
+//	public void forgotPassword()  {
+//	accPage=loginPage.Login(prop.getProperty("username"), prop.getProperty("pwd"));
+//	Assert.assertEquals(accPage.getAccountPageTitle(), ACCOUNT_PAGE_TITLE);
 		
 	
-	}
+//	}
 }
